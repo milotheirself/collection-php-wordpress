@@ -4,11 +4,11 @@
  */
 /*
 Plugin Name: My Plugin
-Plugin URI: http://alecaddd.com/plugin
+Plugin URI: http://example.com/plugin
 Description: This is my first attempt on writing a custom Plugin for this amazing tutorial series.
 Version: 1.0.0
 Author: Alessandro "My" Castellani
-Author URI: http://alecaddd.com
+Author URI: http://example.com
 License: GPLv2 or later
 Text Domain: my-plugin
  */
@@ -42,20 +42,20 @@ if (file_exists(dirname(__FILE__) . '/vendor/autoload.php')) {
 /**
  * The code that runs during plugin activation
  */
-function activate_alecaddd_plugin()
+function activate_example_plugin()
 {
     Inc\Base\Activate::activate();
 }
-register_activation_hook(__FILE__, 'activate_alecaddd_plugin');
+register_activation_hook(__FILE__, 'activate_example_plugin');
 
 /**
  * The code that runs during plugin deactivation
  */
-function deactivate_alecaddd_plugin()
+function deactivate_example_plugin()
 {
     Inc\Base\Deactivate::deactivate();
 }
-register_deactivation_hook(__FILE__, 'deactivate_alecaddd_plugin');
+register_deactivation_hook(__FILE__, 'deactivate_example_plugin');
 
 /**
  * Initialize all the core classes of the plugin
